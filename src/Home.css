@@ -1,0 +1,79 @@
+/* Container Styling */
+.home-container {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Header Section */
+  .header h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #4CAF50;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #555;
+  }
+  
+  /* Group Members Section */
+  .group-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .group-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #4CAF50;
+  }
+  
+  /* Styling for group members */
+  .group-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .member {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+    transition: transform 0.3s, color 0.3s; /* Transition effects */
+    font-weight: bold; /* Bold text */
+    position: relative; /* Positioning for pseudo-elements */
+  }
+  
+  /* Extraordinary styling for members */
+  .member::before {
+    content: "🌟"; /* Add a star emoji before each name */
+    position: absolute;
+    left: -25px; /* Positioning the star */
+    font-size: 24px;
+    transition: transform 0.3s; /* Transition for star effect */
+  }
+  
+  .member:hover {
+    color: #ff5733; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge the text on hover */
+  }
+  
+  .member:hover::before {
+    transform: rotate(360deg); /* Spin the star on hover */
+  }
+  
+  /* Footer */
+  .footer {
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 14px;
+  }
+  
